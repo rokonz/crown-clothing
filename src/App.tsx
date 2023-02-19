@@ -1,4 +1,4 @@
-import CategoryItem from './components/category-item.component';
+import Directory from './components/directory.component';
 import './categories.style.scss';
 
 function App() {
@@ -29,13 +29,7 @@ function App() {
             imgUrl: 'https://picsum.photos/399/250.webp',
         },
     ];
-    return (
-        <div className="categories-container">
-            {categories.map((category) => (
-                <CategoryItem {...category} />
-            ))}
-        </div>
-    );
+    return <Directory categories={categories} />;
 }
 
 export default App;

@@ -1,12 +1,7 @@
 import './category-item.style.scss';
+import Category from '../models/category';
 
-interface CategoryItemProps {
-    id: number;
-    title: string;
-    imgUrl: string;
-}
-
-function CategoryItem({ id, title, imgUrl }: CategoryItemProps) {
+function CategoryItem({ id, title, imgUrl }: Category) {
     return (
         <div className="category-container" key={id}>
             <div
